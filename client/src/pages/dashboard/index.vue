@@ -4,7 +4,9 @@
   </div>
 </template>
 
-<script setup lang='ts' name='home'>
-import { ref } from 'vue';
-</script>
+<script setup lang='ts'>
+  defineOptions({
+    name: 'home222'
+  })
 
+</script>
