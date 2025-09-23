@@ -5,6 +5,8 @@
 	},
   "scripts": {
     "dev":"pnpm -C client dev",
-    "build":"pnpm -C client build"
+    "build":"pnpm -C client build",
+    "rrun":"cd rust && cargo run",
+    "rtest":"cd rust && cargo test"
   }
 }

@@ -1,0 +1,15 @@
+# Cargo.toml (Rust)
+[package]
+name = "own-rust"
+version = "0.1.0"
+edition = "2021"
+description = "Hello Rust project"
+
+[dependencies]
+# 生产依赖
+serde = "1.0"
+tokio = { version = "1.0", features = ["full"] }
+
+[dev-dependencies]
+# 开发依赖
+criterion = "0.5"

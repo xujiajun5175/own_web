@@ -79,3 +79,11 @@ pids
 
 # Diagnostic reports (https://nodejs.org/api/report.html)
 report.[0-9]*.[0-9]*.[0-9]*.[0-9]*.json
+
+
+
+# rust
+# 编译输出
+target/
+Cargo.lock
+
