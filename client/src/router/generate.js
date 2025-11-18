@@ -12,9 +12,9 @@ const getRoutePath = (path) => {
   // 处理首页（index.vue → /）
   if (relativePath === 'index') return '/'
   // 处理目录下的 index.vue（home/index → /home）
-  if (relativePath.endsWith('/index')) {
-    return `/${relativePath.replace('/index', '')}`
-  }
+  // if (relativePath.endsWith('/index')) {
+  //   return `/${relativePath.replace('/index', '')}`
+  // }
   // 其他情况（如 about → /about，user/[id] → /user/:id）
   return `/${relativePath}`
 }
@@ -24,8 +24,9 @@ const getRouteName = (path) => {
   return path
     .replace('/src/pages/', '')
     .replace('.vue', '')
-    .replace(/\//g, '-')
+    .replace(/\//g, '>>')
     .replace(/\[(\w+)\]/g, '$1') // 处理动态路由参数
+    .replace(/>>index$/, '') // 剔除最后的index
 }
 
 export const generateRoutes = () => {
