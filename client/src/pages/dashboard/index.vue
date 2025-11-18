@@ -1,12 +1,10 @@
+<script setup lang='ts' >
+import { ref } from 'vue';
+defineOptions({ name: 'asdasd' })
+</script>
+
 <template>
-  <div class="home-view">
-    <h2>home</h2>
-  </div>
+<div>asdasd</div>
 </template>
 
-<script setup lang='ts'>
-  defineOptions({
-    name: 'home222'
-  })
-
-</script>
+<style scoped></style>
